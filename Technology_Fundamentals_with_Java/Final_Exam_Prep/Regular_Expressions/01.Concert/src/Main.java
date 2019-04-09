@@ -9,7 +9,7 @@ public class Main {
         String input = "";
 
         Map<String, List<String>> bands = new LinkedHashMap<>();
-        Map<String, Integer> bandsTimeOnStage = new LinkedHashMap<>();
+        Map<String, Integer> bandsTimeOnStage = new TreeMap<>();
         while (!"start of concert".equals(input = scanner.nextLine())) {
                 String[] commands = input.split(";\\s+");
                 sortContent(bands, bandsTimeOnStage, commands);
