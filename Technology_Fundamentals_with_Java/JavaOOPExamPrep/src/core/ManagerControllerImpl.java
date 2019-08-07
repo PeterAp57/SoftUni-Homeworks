@@ -73,7 +73,8 @@ public class ManagerControllerImpl implements ManagerController {
     public String report() {
         StringBuilder message = new StringBuilder();
         for (Player player : this.playerRepository.getPlayers()) {
-            message.append(player.toString());
+            message.append(player.toString())
+                    .append(System.lineSeparator());
         }
 
         return message.toString().trim();

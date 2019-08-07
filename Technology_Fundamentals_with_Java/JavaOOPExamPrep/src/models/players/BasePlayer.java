@@ -1,6 +1,7 @@
 package models.players;
 
 import common.ConstantMessages;
+import models.cards.interfaces.Card;
 import models.players.interfaces.Player;
 import repositories.interfaces.CardRepository;
 
@@ -79,10 +80,12 @@ public abstract class BasePlayer implements Player {
         builder.append(String.format(ConstantMessages.PLAYER_REPORT_INFO,
                 this.getUsername(),
                 this.getHealth(),
-                cardCount));
+                cardCount))
+                .append(System.lineSeparator());
 
-        this.getCardRepository().getCards()
-                .forEach(c -> builder.append(c.toString()));
+        for (Card c : this.getCardRepository().getCards()) {
+            builder.append(c.toString()).append(System.lineSeparator());
+        }
 
         builder.append(ConstantMessages.DEFAULT_REPORT_SEPARATOR);
 

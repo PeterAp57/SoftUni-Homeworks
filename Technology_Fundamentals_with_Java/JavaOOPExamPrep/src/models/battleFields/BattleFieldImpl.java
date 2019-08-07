@@ -12,22 +12,24 @@ public class BattleFieldImpl implements Battlefield {
 
 
     public BattleFieldImpl() {
-
     }
-
 
     @Override
     public void fight(Player attackPlayer, Player enemyPlayer) {
-        isDead(attackPlayer, enemyPlayer);
+        isDead(attackPlayer);
+        isDead(enemyPlayer);
+
         isBeginner(attackPlayer);
         isBeginner(enemyPlayer);
+
         getBonusHealthFromDeck(attackPlayer);
         getBonusHealthFromDeck(enemyPlayer);
+
         duel(attackPlayer, enemyPlayer);
     }
 
-    private void isDead(Player attackPlayer, Player enemyPlayer) {
-        if (attackPlayer.isDead() || enemyPlayer.isDead()) {
+    private void isDead(Player player) {
+        if (player.isDead()) {
             throw new IllegalArgumentException("Player is dead!");
         }
     }
@@ -53,18 +55,14 @@ public class BattleFieldImpl implements Battlefield {
 
             enemyPlayer.takeDamage(attackPlayerDamagePoints);
 
-            if (enemyPlayer.isDead()) {
-                return;
-            }
+            if (enemyPlayer.isDead()) break;
 
             int enemyPlayerDamagePoints = enemyPlayer.getCardRepository()
                     .getCards().stream().mapToInt(Card::getDamagePoints).sum();
 
             attackPlayer.takeDamage(enemyPlayerDamagePoints);
 
-            if (attackPlayer.isDead()) {
-                return;
-            }
+            if (attackPlayer.isDead()) break;
         }
     }
 
