@@ -43,7 +43,7 @@ public abstract class BasePlayer implements Player {
 
     @Override
     public void setHealth(int healthPoints) {
-        if (healthPoints <= 0) {
+        if (healthPoints < 0) {
             throw new IllegalArgumentException("Player's health bonus cannot be less than zero.");
         }
         this.health = healthPoints;
@@ -63,7 +63,7 @@ public abstract class BasePlayer implements Player {
 
     @Override
     public void takeDamage(int damagePoints) {
-        if (damagePoints <= 0) {
+        if (damagePoints < 0) {
             throw new IllegalArgumentException("Damage points cannot be less than zero.");
         }
         this.health -= damagePoints;

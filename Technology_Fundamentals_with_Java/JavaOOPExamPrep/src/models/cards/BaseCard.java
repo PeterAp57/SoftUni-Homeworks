@@ -23,7 +23,7 @@ public abstract class BaseCard implements Card {
     }
 
     private void setHealthPoints(int healthPoints) {
-        if (healthPoints <= 0) {
+        if (healthPoints < 0) {
             throw new IllegalArgumentException("Card's HP cannot be less than zero.");
         }
         this.healthPoints = healthPoints;
@@ -41,7 +41,7 @@ public abstract class BaseCard implements Card {
 
     @Override
     public void setDamagePoints(int damagePoints) {
-        if (damagePoints <= 0) {
+        if (damagePoints < 0) {
             throw new IllegalArgumentException("Card's damage points cannot be less than zero.");
         }
         this.damagePoints = damagePoints;

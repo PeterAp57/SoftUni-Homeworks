@@ -28,7 +28,7 @@ public class PlayerRepositoryImpl implements PlayerRepository {
 
     @Override
     public void add(Player player) {
-        if (player == null || player.getUsername().isEmpty()) {
+        if (player == null) {
             throw new IllegalArgumentException("Player cannot be null");
         }
         if (this.players.containsKey(player.getUsername())) {
@@ -39,7 +39,7 @@ public class PlayerRepositoryImpl implements PlayerRepository {
 
     @Override
     public boolean remove(Player player) {
-        if (player == null || player.getUsername().isEmpty()) {
+        if (player == null) {
             throw new IllegalArgumentException("Player cannot be null");
         }
         return players.remove(player.getUsername(), player);

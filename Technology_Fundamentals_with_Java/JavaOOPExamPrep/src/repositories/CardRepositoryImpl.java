@@ -28,7 +28,7 @@ public class CardRepositoryImpl implements CardRepository {
 
     @Override
     public void add(Card card) {
-        if (card == null || card.getName().isEmpty()) {
+        if (card == null) {
             throw new IllegalArgumentException("Card cannot be null!");
         }
         if (this.cards.containsKey(card.getName())) {
@@ -39,7 +39,7 @@ public class CardRepositoryImpl implements CardRepository {
 
     @Override
     public boolean remove(Card card) {
-        if (card == null || card.getName().isEmpty()) {
+        if (card == null) {
             throw new IllegalArgumentException("Card cannot be null!");
         }
         return this.cards.remove(card.getName(), card);

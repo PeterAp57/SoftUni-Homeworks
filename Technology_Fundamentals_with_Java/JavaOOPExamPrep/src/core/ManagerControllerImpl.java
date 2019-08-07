@@ -44,9 +44,9 @@ public class ManagerControllerImpl implements ManagerController {
     @Override
     public String addCard(String type, String name) {
         Card card = null;
-        if (MagicCard.class.getSimpleName().equals(type)) {
+        if (type.equals("Magic")) {
             card = new MagicCard(name);
-        } else if (TrapCard.class.getSimpleName().equals(type)) {
+        } else if (type.equals("Trap")) {
             card = new TrapCard(name);
         }
         this.cardRepository.add(card);
