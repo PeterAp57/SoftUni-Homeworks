@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f736886e-4c78-4eda-9624-a73b5ba0599b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/ManagerControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/ManagerControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/cards/BaseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/cards/BaseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/players/BasePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/players/BasePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/CardRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/PlayerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/PlayerRepositoryImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="f736886e-4c78-4eda-9624-a73b5ba0599b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,16 +229,15 @@
       <workItem from="1555521119848" duration="921000" />
       <workItem from="1565178234099" duration="21594000" />
       <workItem from="1565205105209" duration="908000" />
-      <workItem from="1565206144050" duration="2262000" />
+      <workItem from="1565206144050" duration="2406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25685000" />
+    <option name="totallyTimeSpent" value="25829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
