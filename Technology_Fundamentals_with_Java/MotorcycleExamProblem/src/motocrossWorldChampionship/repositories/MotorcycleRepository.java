@@ -19,7 +19,7 @@ public class MotorcycleRepository implements Repository<Motorcycle> {
 
     @Override
     public Motorcycle getByName(String name) {
-        if (this.data.stream().noneMatch(e -> e.getModel().equals(name)) || name.isEmpty()) {
+        if (name == null || name.isEmpty() || this.data.stream().noneMatch(e -> e.getModel().equals(name))) {
             throw new NullPointerException(String.format(ExceptionMessages.MOTORCYCLE_NOT_FOUND, name));
         }
         return this.data.stream().filter(e -> e.getModel().equals(name))

@@ -21,7 +21,7 @@ public class RaceImpl implements Race {
     }
 
     private void setName(String name) {
-        if (name == null || name.isEmpty() || name.trim().length() < 5) {
+        if (name == null || name.isEmpty() || name.equals("\\s+") || name.trim().length() < 5) {
             throw new IllegalArgumentException(String.format(ExceptionMessages.INVALID_NAME, name, 5));
         }
         this.name = name;
@@ -58,13 +58,14 @@ public class RaceImpl implements Race {
     public void addRider(Rider rider) {
         if (rider == null) {
             throw new NullPointerException(ExceptionMessages.RIDER_INVALID);
-        } else if (!rider.getCanParticipate()) {
+        }
+        if (!rider.getCanParticipate()) {
             throw new IllegalArgumentException(String.format(ExceptionMessages.RIDER_NOT_PARTICIPATE, rider.getName()));
-        } else if (this.riders.stream().anyMatch(e -> e.getName().equals(rider.getName()))) {
+        }
+        if (this.riders.stream().anyMatch(e -> e.getName().equals(rider.getName()))) {
             throw new IllegalArgumentException(String.format(ExceptionMessages.RIDER_ALREADY_ADDED,
                     rider.getName(),
-                    this.name
-            ));
+                    getName()));
         }
         this.riders.add(rider);
     }

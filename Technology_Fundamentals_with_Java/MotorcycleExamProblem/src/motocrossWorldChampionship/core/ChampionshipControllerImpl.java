@@ -29,6 +29,9 @@ public class ChampionshipControllerImpl implements ChampionshipController {
 
     @Override
     public String createRider(String riderName) {
+        if (this.riderRepository.getAll().stream().anyMatch(e -> e.getName().equals(riderName))) {
+            throw new IllegalArgumentException(String.format("Rider %s is already created.", riderName));
+        }
         this.riderRepository.add(new RiderImpl(riderName));
         return String.format(OutputMessages.RIDER_CREATED, riderName);
     }
@@ -75,6 +78,7 @@ public class ChampionshipControllerImpl implements ChampionshipController {
         if (race.getRiders().size() < 3) {
             throw new IllegalArgumentException(String.format(ExceptionMessages.RACE_INVALID, raceName, 3));
         }
+
         int laps = race.getLaps();
 
         List<Rider> riders = race.getRiders().stream()
