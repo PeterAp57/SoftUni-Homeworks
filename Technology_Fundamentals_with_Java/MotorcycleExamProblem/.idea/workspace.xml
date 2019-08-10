@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2377ac-162a-426d-a63f-201298dd9ecc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/core/ChampionshipControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/core/ChampionshipControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/MotorcycleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/MotorcycleImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/RaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/RaceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/RiderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/entities/RiderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/MotorcycleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/MotorcycleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/RaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/RaceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/RiderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/motocrossWorldChampionship/repositories/RiderRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f2377ac-162a-426d-a63f-201298dd9ecc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,14 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/core/ChampionshipControllerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -298,16 +296,15 @@
       <option name="presentableId" value="Default" />
       <updated>1565424201387</updated>
       <workItem from="1565424207668" duration="17208000" />
-      <workItem from="1565460056891" duration="3165000" />
+      <workItem from="1565460056891" duration="3274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20373000" />
+    <option name="totallyTimeSpent" value="20482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="700" y="0" width="1227" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22879177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,13 +403,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MXPG-Skeleton.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/entities/RiderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -527,10 +517,17 @@
     <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/core/ChampionshipControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/motocrossWorldChampionship/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
